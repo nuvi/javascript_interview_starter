@@ -1,0 +1,27 @@
+extends ./layout
+block index
+    div(class='container-fluid', ng-init='init()')
+        div(id='intro', class='col-sm-12')
+            div(class='text-center alert alert-info')
+                p=profile.name
+                p
+                    a(href="#{profile.linkedin}") Linkedin Profile
+                p=profile.email
+                p=profile.phone
+    div(class='container-fluid')
+        div(class='col-sm-12')
+            div(class='col-sm-4 tweets', ng-repeat='twit in tweets')
+                div(class='front alert alert-success')
+                    p
+                        h2 {{twit.screen_name}}
+                    p {{twit.status}}
+                div(class='back text-center alert alert-info')
+                    div(style='display: inline-block')
+                        p Followers:&nbsp
+                            i(class='glyphicon glyphicon-eye-open') &nbsp{{twit.followers}}
+
+                    div
+                        p Friends:&nbsp
+                            i(class='glyphicon glyphicon-user') &nbsp{{twit.friends}}
+
+

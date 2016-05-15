@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title= title
+        link(rel='stylesheet', type='text/css', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', type='text/css', href='css/style.css')
+        script(type='text/javascript', src='/bower_components/jquery/jquery.js')
+        script(type='text/javascript', src='/bower_components/flip/dist/jquery.flip.min.js')
+        script(type='text/javascript', src='/bower_components/bootstrap/dist/js/bootstrap.js')
+        script(type='text/javascript', src='/bower_components/angular/angular.js')
+        script(type='text/javascript', src='/js/indexCtrl.js')
+    body(ng-app='nuviTweets', ng-controller='indexCtrl')
+        nav(class='navbar navbar-default')
+            div(class='container-fluid')
+                div(class='navbar-header')
+                    button(type='button', class='navbar-toggle', data-toggle='collapse', data-target='#my-navbar')
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                        span(class='icon-bar')
+                    a(class='navbar-brand', href='https://www.nuvi.com')
+                        img(src='/images/nuvi-logo.png', style='height: 90%;')
+                div(class='collapse navbar-collapse', id='my-navbar')
+                    ul(class='nav navbar-nav navbar-right')
+                        li(style='padding-top: 5px;')
+                            a(href='http://skellertor.info') http://skellertor.info
+        block index
