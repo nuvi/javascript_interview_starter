@@ -1,5 +1,7 @@
 # javascript_interview_starter
 
+Hey guys, this is Sam Keller from the group interview on Thursday.  I am applying for the javascript developer position.
+
 This is a node app using the express framework.
 
 Instruction:
